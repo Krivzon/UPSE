@@ -1239,7 +1239,7 @@
         "type": "function",
         "z": "b1123e01f1806ad2",
         "name": "Analizador de Descanso",
-        "func": "let datos = msg.payload;\nlet estado = \"Descanso Profundo\";\n\n// Lógica básica: Si el corazón late rápido o hay mucho movimiento, el descanso es pobre.\nif (datos.ritmo_cardiaco > 75 || datos.movimiento === \"Alto\") {\n    estado = \"Sueño Inquieto / Despierto\";\n} else if (datos.ritmo_cardiaco > 65) {\n    estado = \"Sueño Ligero\";\n}\n\n// Preparamos el mensaje para enviarlo al Dashboard\nmsg.payload = {\n    sensores: datos,\n    estado_descanso: estado\n};\nreturn msg;",
+        "func": "let datos = msg.payload;\nlet estado = \"Descanso Profundo\";\nlet codigo_color = \"#4CAF50\"; // Verde\n\n// Lógica de alertas\nif (datos.ritmo_cardiaco > 75 || datos.movimiento === \"Alto\") {\n    // ¡Aquí le regresamos la \"ñ\" para que el switch lo detecte!\n    estado = \"Sueño Inquieto / Alerta\";\n    codigo_color = \"#ff4d4d\"; // Rojo\n} else if (datos.ritmo_cardiaco > 65) {\n    estado = \"Sueño Ligero\";\n    codigo_color = \"#ffc107\"; // Amarillo\n}\n\n// Empaquetamos los datos\nmsg.payload = {\n    sensores: datos,\n    estado_descanso: estado,\n    color: codigo_color\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1251,7 +1251,8 @@
         "wires": [
             [
                 "d65cce20939d50e8",
-                "3c480563d53e95e9"
+                "3c480563d53e95e9",
+                "8c63b9be895e464e"
             ]
         ]
     },
@@ -1267,7 +1268,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<div style=\"background-color: #1e1e2f; color: white; padding: 20px; border-radius: 10px; font-family: sans-serif;\">\n    <h2 style=\"text-align:center; color: #4CAF50;\">🌙 Monitor de Sueño</h2>\n    \n    <div style=\"display: flex; justify-content: space-around; margin-top: 20px;\">\n        <div>\n            <h3>❤️ Ritmo Cardíaco</h3>\n            <p style=\"font-size: 24px;\">{{msg.payload.sensores.ritmo_cardiaco || '--'}} bpm</p>\n        </div>\n        <div>\n            <h3>🫁 Respiración</h3>\n            <p style=\"font-size: 24px;\">{{msg.payload.sensores.respiracion || '--'}} rpm</p>\n        </div>\n        <div>\n            <h3>🛏️ Movimiento</h3>\n            <p style=\"font-size: 24px;\">{{msg.payload.sensores.movimiento || '--'}}</p>\n        </div>\n    </div>\n\n    <div style=\"text-align: center; margin-top: 30px; padding: 15px; background-color: #2c2c3e; border-radius: 8px;\">\n        <h3>Estado Actual</h3>\n        <h1 style=\"color: #00bcd4;\">{{msg.payload.estado_descanso || 'Esperando datos...'}}</h1>\n    </div>\n</div>",
+        "format": "<div v-if=\"msg.payload\"\n    style=\"background-color: #1e1e2f; color: white; padding: 20px; border-radius: 10px; font-family: sans-serif;\">\n    <h2 style=\"text-align:center; color: #4CAF50;\">🌙 Monitor de Sueño</h2>\n\n    <div style=\"display: flex; justify-content: space-around; margin-top: 20px;\">\n        <div>\n            <h3>❤️ Ritmo Cardíaco</h3>\n            <p style=\"font-size: 24px;\">{{ msg.payload.sensores.ritmo_cardiaco }} bpm</p>\n        </div>\n        <div>\n            <h3>🫁 Respiración</h3>\n            <p style=\"font-size: 24px;\">{{ msg.payload.sensores.respiracion }} rpm</p>\n        </div>\n        <div>\n            <h3>🛏️ Movimiento</h3>\n            <p style=\"font-size: 24px;\">{{ msg.payload.sensores.movimiento }}</p>\n        </div>\n    </div>\n\n    <div style=\"text-align: center; margin-top: 30px; padding: 15px; background-color: #2c2c3e; border-radius: 8px;\">\n        <h3>Estado Actual</h3>\n        <h1 :style=\"{ color: msg.payload.color }\">{{ msg.payload.estado_descanso }}</h1>\n    </div>\n</div>\n\n<div v-else\n    style=\"background-color: #1e1e2f; color: white; padding: 20px; border-radius: 10px; text-align: center; font-family: sans-serif;\">\n    <h2 style=\"color: #4CAF50;\">🌙 Monitor de Sueño</h2>\n    <h3 style=\"color: #00bcd4;\">Esperando datos de los sensores...</h3>\n</div>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -1310,6 +1311,82 @@
         "inputs": 0,
         "x": 200,
         "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c63b9be895e464e",
+        "type": "switch",
+        "z": "b1123e01f1806ad2",
+        "name": "",
+        "property": "payload.estado_descanso",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Sueño Inquieto / Alerta",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 460,
+        "wires": [
+            [
+                "a0ec657e3eb7ca9a"
+            ]
+        ]
+    },
+    {
+        "id": "a0ec657e3eb7ca9a",
+        "type": "change",
+        "z": "b1123e01f1806ad2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "¡ALERTA! El paciente presenta ritmo cardíaco alto o movimiento.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 520,
+        "wires": [
+            [
+                "b5a64f6192bc409d"
+            ]
+        ]
+    },
+    {
+        "id": "b5a64f6192bc409d",
+        "type": "ui-notification",
+        "z": "b1123e01f1806ad2",
+        "ui": "4a179a7ec3d10560",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#ff0000",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "",
+        "x": 970,
+        "y": 520,
         "wires": [
             []
         ]
