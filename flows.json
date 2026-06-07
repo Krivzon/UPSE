@@ -1,0 +1,1906 @@
+[
+    {
+        "id": "8ed640c0533ce706",
+        "type": "tab",
+        "label": "Cliente Sensor",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1b2fa494e3e4aab7",
+        "type": "tab",
+        "label": "Cliente Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4a179a7ec3d10560",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "bdd75ff31c03ce78",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#002db3",
+            "primary": "#0094ce",
+            "bgPage": "#c2c2c2",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "638b3166bca4adf1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4409b551e9d5f642",
+        "type": "mqtt-broker",
+        "name": "HIVEMQ",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "HOLA",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0251b725d81a7798",
+        "type": "ui-page",
+        "name": "Laboratorio 3",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 7,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "3998d51924df9e7a",
+        "type": "ui-group",
+        "name": "AVISO",
+        "page": "0251b725d81a7798",
+        "width": "5",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0420ac146bee7dda",
+        "type": "mqtt-broker",
+        "name": "MOSQUITTO",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6b68dcdfc8e52331",
+        "type": "ui-group",
+        "name": "Estado",
+        "page": "0251b725d81a7798",
+        "width": "6",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "69ae101610968e7b",
+        "type": "ui-page",
+        "name": "Laboratorio 4",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 8,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "087bccc7da50e67c",
+        "type": "ui-group",
+        "name": "GAUST",
+        "page": "69ae101610968e7b",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d4053ceca840bc66",
+        "type": "ui-group",
+        "name": "AVISO",
+        "page": "69ae101610968e7b",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b03c7d3b2fb61fea",
+        "type": "ui-page",
+        "name": "Laboratorio 5",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab5",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 9,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "f03485b4d00a4655",
+        "type": "ui-group",
+        "name": "WeatherStack",
+        "page": "b03c7d3b2fb61fea",
+        "width": "6",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "781ea034eb215d45",
+        "type": "ui-group",
+        "name": "OpenWeather",
+        "page": "b03c7d3b2fb61fea",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d2f08548fd18816d",
+        "type": "ui-page",
+        "name": "Proyecto - MARKDOWN 1",
+        "ui": "4a179a7ec3d10560",
+        "path": "/home",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 10,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "c70c9924d7f654f5",
+        "type": "ui-group",
+        "name": "UTMACH",
+        "page": "d2f08548fd18816d",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "32baa51b1b813c32",
+        "type": "ui-page",
+        "name": "Group1",
+        "ui": "4a179a7ec3d10560",
+        "path": "/group1",
+        "icon": "thermometer-lines",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 11,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "0d5d76c1d9218e84",
+        "type": "ui-page",
+        "name": "Group 2",
+        "ui": "4a179a7ec3d10560",
+        "path": "/group2",
+        "icon": "router-network-wireless",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 12,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "1928189163de15fe",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "32baa51b1b813c32",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cef9f418c0d33318",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "0d5d76c1d9218e84",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "635e87301ed0c4ef",
+        "type": "ui-page",
+        "name": "Cliente REST",
+        "ui": "4a179a7ec3d10560",
+        "path": "/page7",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 13,
+        "className": "",
+        "visible": false,
+        "disabled": true
+    },
+    {
+        "id": "da40f663f5f34174",
+        "type": "ui-group",
+        "name": "CLIENTE REST",
+        "page": "635e87301ed0c4ef",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5f0b5961bf1ef118",
+        "type": "ui-page",
+        "name": "PAGINA DE INICIO",
+        "ui": "4a179a7ec3d10560",
+        "path": "/inicio",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "968073b8f4d056c6",
+        "type": "ui-group",
+        "name": "INICIO",
+        "page": "5f0b5961bf1ef118",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0c3197fb85bf3282",
+        "type": "ui-page",
+        "name": "Laboratorio 1",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "0a597b69e8573bb6",
+        "type": "ui-group",
+        "name": "Sensor parte1",
+        "page": "0c3197fb85bf3282",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fbf018c99c5fdace",
+        "type": "ui-group",
+        "name": "Sensor parte2",
+        "page": "0c3197fb85bf3282",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "19f4e44f9e2acd9b",
+        "type": "ui-group",
+        "name": "Extraer datos de un JSON",
+        "page": "0c3197fb85bf3282",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8298fd820e3228fc",
+        "type": "ui-page",
+        "name": "Laboratorio 2.2",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab2.2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "75452475d49f654c",
+        "type": "ui-group",
+        "name": "Estado",
+        "page": "8298fd820e3228fc",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "dada15d429cd4fb7",
+        "type": "ui-page",
+        "name": "Laboratorio 2.3",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab2.3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": false,
+        "disabled": false
+    },
+    {
+        "id": "d453c32c351d7be3",
+        "type": "ui-group",
+        "name": "Importacion de Dash1",
+        "page": "dada15d429cd4fb7",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1a7d25a02537d92f",
+        "type": "ui-group",
+        "name": "CUADROS",
+        "page": "dada15d429cd4fb7",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "aa04dc0c36341324",
+        "type": "ui-theme",
+        "name": "ui-base.label.theme 2",
+        "colors": {
+            "surface": "#1bbb86",
+            "primary": "#11d07d",
+            "bgPage": "#000000",
+            "groupBg": "#696969",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "9ca1a902b39cb86c",
+        "type": "ui-page",
+        "name": "Laboratorio 2",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lab2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "aa04dc0c36341324",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "190a3eb82c66206a",
+        "type": "ui-group",
+        "name": "Group 4",
+        "page": "9ca1a902b39cb86c",
+        "width": "3",
+        "height": "9",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "8022e6c695b3b05f",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "9ca1a902b39cb86c",
+        "width": "3",
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "fef2d93f8d165c9c",
+        "type": "ui-group",
+        "name": "Group 3",
+        "page": "9ca1a902b39cb86c",
+        "width": "3",
+        "height": "2",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5eae34e60b4a96b4",
+        "type": "ui-group",
+        "name": "Group 2",
+        "page": "9ca1a902b39cb86c",
+        "width": "3",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5164896a4f7bc316",
+        "type": "ui-page",
+        "name": " Leccion 1: MQTT",
+        "ui": "4a179a7ec3d10560",
+        "path": "/lecc",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "bdd75ff31c03ce78",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "514a849a7b067892",
+        "type": "ui-group",
+        "name": "SENSORES",
+        "page": "5164896a4f7bc316",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f68f10eb30c9d1bc",
+        "type": "ui-group",
+        "name": "ESTADO",
+        "page": "5164896a4f7bc316",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "77de30eda38d93f2",
+        "type": "inject",
+        "z": "8ed640c0533ce706",
+        "name": "Dar valores cada 1 m",
+        "props": [
+            {
+                "p": "hum",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "074d98ec4c96286d"
+            ]
+        ]
+    },
+    {
+        "id": "532af9c4d98011bf",
+        "type": "random",
+        "z": "8ed640c0533ce706",
+        "name": "Temperatura",
+        "low": 1,
+        "high": "100",
+        "inte": "false",
+        "property": "temp",
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "0d7b2e48b008a8af",
+                "1786aa593b93305f"
+            ]
+        ]
+    },
+    {
+        "id": "074d98ec4c96286d",
+        "type": "random",
+        "z": "8ed640c0533ce706",
+        "name": "Humedad",
+        "low": 1,
+        "high": "100",
+        "inte": "false",
+        "property": "hum",
+        "x": 360,
+        "y": 200,
+        "wires": [
+            [
+                "78b294edf32da459",
+                "fe8d7eb70f93c1b8"
+            ]
+        ]
+    },
+    {
+        "id": "01ad5533d1d4b564",
+        "type": "inject",
+        "z": "8ed640c0533ce706",
+        "name": "Dar valores cada 2 m",
+        "props": [
+            {
+                "p": "temp",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "repeat": "120",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 140,
+        "y": 280,
+        "wires": [
+            [
+                "532af9c4d98011bf"
+            ]
+        ]
+    },
+    {
+        "id": "813a5ec7116778fd",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "alarmaHumedad",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.sistema.estado.alarmaHumedad",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 60,
+        "wires": [
+            [
+                "9003ee2309a412b6"
+            ]
+        ]
+    },
+    {
+        "id": "f91c19ddfa1b26f7",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "alarmaT",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.sistema.estado.alarmaTemperatura",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 360,
+        "wires": [
+            [
+                "9003ee2309a412b6"
+            ]
+        ]
+    },
+    {
+        "id": "78b294edf32da459",
+        "type": "switch",
+        "z": "8ed640c0533ce706",
+        "name": ">60",
+        "property": "hum",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "60",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "59",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 80,
+        "wires": [
+            [
+                "813a5ec7116778fd"
+            ],
+            [
+                "95e29d808370cf9a"
+            ]
+        ]
+    },
+    {
+        "id": "95e29d808370cf9a",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "alarmaHumedad",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.sistema.estado.alarmaHumedad",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 100,
+        "wires": [
+            [
+                "9003ee2309a412b6"
+            ]
+        ]
+    },
+    {
+        "id": "9003ee2309a412b6",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "ESTADO",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"sistema\":{\"nombre\":\"Riego Inteligente\",\"ubicacion\":\"Invernadero 1\",\"estado\":{\"riego\":false,\"alarmaTemperatura\":payload.sistema.estado.alarmaTemperatura,\"alarmaHumedad\":payload.sistema.estado.alarmaHumedad}}}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1220,
+        "y": 240,
+        "wires": [
+            [
+                "cbcadbb13685c507",
+                "57c61a2999bef0ec"
+            ]
+        ]
+    },
+    {
+        "id": "0d7b2e48b008a8af",
+        "type": "switch",
+        "z": "8ed640c0533ce706",
+        "name": ">60",
+        "property": "temp",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "60",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "59",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 610,
+        "y": 420,
+        "wires": [
+            [
+                "f91c19ddfa1b26f7"
+            ],
+            [
+                "3a49dc843b26f612"
+            ]
+        ]
+    },
+    {
+        "id": "3a49dc843b26f612",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "alarmaT",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.sistema.estado.alarmaTemperatura",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 420,
+        "wires": [
+            [
+                "9003ee2309a412b6"
+            ]
+        ]
+    },
+    {
+        "id": "fe8d7eb70f93c1b8",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "Hum red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.hum",
+                "pt": "msg",
+                "to": "$round(hum, 2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 200,
+        "wires": [
+            [
+                "119ad2db8f7d127b",
+                "1cddd9691960da78"
+            ]
+        ]
+    },
+    {
+        "id": "1786aa593b93305f",
+        "type": "change",
+        "z": "8ed640c0533ce706",
+        "name": "TEMP red",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temp",
+                "pt": "msg",
+                "to": "$round(temp, 2)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "119ad2db8f7d127b",
+                "1cddd9691960da78"
+            ]
+        ]
+    },
+    {
+        "id": "119ad2db8f7d127b",
+        "type": "mqtt out",
+        "z": "8ed640c0533ce706",
+        "name": "",
+        "topic": "KRISTHIAN/Sensores",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0420ac146bee7dda",
+        "x": 900,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "cbcadbb13685c507",
+        "type": "mqtt out",
+        "z": "8ed640c0533ce706",
+        "name": "",
+        "topic": "KRISTHIAN/Estado",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0420ac146bee7dda",
+        "x": 1430,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "50571f67d16e4db9",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Lanza mensaje cada 1 minuto",
+        "info": "Injecta cada 1 minuto para la humedad",
+        "x": 140,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "de51555e7227ee9a",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Lanza mensaje cada 2 minuto",
+        "info": "Injecta cada 2 minuto para la temperatura",
+        "x": 140,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "73fa69c2bd302719",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Simula Sensor Humedad",
+        "info": "Genera Humedad random",
+        "x": 390,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ef5ccfc91b2f8d3a",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Redondea Humedad",
+        "info": "Redondea en 2 dijitos los decimales de humedad",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "dc84cbec7eeb60a3",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Simula Sensor Temperatura",
+        "info": "Genera Temperatura random",
+        "x": 400,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d17784592398af52",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Redondea Temperatura",
+        "info": "Redondea en 2 dijitos los decimales de temperatura",
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "edd2e27ae97b263e",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Envia al Canal de Sensores",
+        "info": "Envia al Canal de Sensores los datos de humedad y temperatura",
+        "x": 920,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "0afc4605da949935",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Envia al Canal de Estado",
+        "info": "Envia al Canal de Estado los datos de lugar, nombre, estado del riego, temperatura y humedad",
+        "x": 1450,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b56ce2d01cf0a84f",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "JSON ESTADO",
+        "info": "El Json que lleva los datos de lugar, nombre, estado del riego, temperatura y humedad",
+        "x": 1220,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e3d55a23f7b2b461",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Activar alarma Humedad",
+        "info": "Activa la alarma de Humedad si es >60",
+        "x": 830,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "e06501e244badc35",
+        "type": "comment",
+        "z": "8ed640c0533ce706",
+        "name": "Activar alarma Temperatura",
+        "info": "Activa la alarma de Temperatura si es >60",
+        "x": 820,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1cddd9691960da78",
+        "type": "debug",
+        "z": "8ed640c0533ce706",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "57c61a2999bef0ec",
+        "type": "debug",
+        "z": "8ed640c0533ce706",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d0bd450bb07edf28",
+        "type": "mqtt in",
+        "z": "1b2fa494e3e4aab7",
+        "name": "",
+        "topic": "KRISTHIAN/Sensores",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0420ac146bee7dda",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "9fa9e0ea60737d19",
+                "353f293017ad7483",
+                "82178b45791c1d37"
+            ]
+        ]
+    },
+    {
+        "id": "9fa9e0ea60737d19",
+        "type": "ui-gauge",
+        "z": "1b2fa494e3e4aab7",
+        "name": "HUMEDAD",
+        "group": "514a849a7b067892",
+        "order": 2,
+        "value": "payload.hum",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 450,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "353f293017ad7483",
+        "type": "ui-gauge",
+        "z": "1b2fa494e3e4aab7",
+        "name": "TEMPERATURA",
+        "group": "514a849a7b067892",
+        "order": 1,
+        "value": "payload.temp",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "C°",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 450,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30ccb7877c5c1ab8",
+        "type": "mqtt in",
+        "z": "1b2fa494e3e4aab7",
+        "name": "",
+        "topic": "KRISTHIAN/Estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0420ac146bee7dda",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "3e4e7f2312cb6656",
+                "8f1a03ee31bf68ce",
+                "80cbf55f85c1ed50",
+                "3ce92bec4d775772",
+                "5c4d144b791cc81a",
+                "ba93eb9a71cd615b"
+            ]
+        ]
+    },
+    {
+        "id": "3e4e7f2312cb6656",
+        "type": "ui-text",
+        "z": "1b2fa494e3e4aab7",
+        "group": "f68f10eb30c9d1bc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "nombre",
+        "label": "Nombre: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.sistema.nombre",
+        "valueType": "msg",
+        "x": 460,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8f1a03ee31bf68ce",
+        "type": "ui-text",
+        "z": "1b2fa494e3e4aab7",
+        "group": "f68f10eb30c9d1bc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "ubcacion",
+        "label": "Ubicacion: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.sistema.ubicacion",
+        "valueType": "msg",
+        "x": 460,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3ce92bec4d775772",
+        "type": "ui-text",
+        "z": "1b2fa494e3e4aab7",
+        "group": "f68f10eb30c9d1bc",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "AlarmaHumedad",
+        "label": "AlarmaHumedad: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.sistema.estado.alarmaHumedad",
+        "valueType": "msg",
+        "x": 490,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "5c4d144b791cc81a",
+        "type": "ui-text",
+        "z": "1b2fa494e3e4aab7",
+        "group": "f68f10eb30c9d1bc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "AlarmaTemperatura",
+        "label": "AlarmaTemperatura: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.sistema.estado.alarmaTemperatura",
+        "valueType": "msg",
+        "x": 490,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "80cbf55f85c1ed50",
+        "type": "ui-text",
+        "z": "1b2fa494e3e4aab7",
+        "group": "f68f10eb30c9d1bc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "riego",
+        "label": "Riego: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload.sistema.estado.riego",
+        "valueType": "msg",
+        "x": 450,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "28152b9a05a10429",
+        "type": "comment",
+        "z": "1b2fa494e3e4aab7",
+        "name": "Gauge de Humedad",
+        "info": "Muestra los datos de humedad en un gauge",
+        "x": 470,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "80a11f142f8cd8e7",
+        "type": "comment",
+        "z": "1b2fa494e3e4aab7",
+        "name": "Gauge de Temperatura",
+        "info": "Muestra los datos de temperatura en un gauge",
+        "x": 460,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ae979bcf832aad25",
+        "type": "comment",
+        "z": "1b2fa494e3e4aab7",
+        "name": "Recibe Canal de Sensores",
+        "info": "Recibe del Canal de Sensores los datos de humedad y temperatura",
+        "x": 190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "aea35c101167741d",
+        "type": "comment",
+        "z": "1b2fa494e3e4aab7",
+        "name": "Recibe del Canal de Estado",
+        "info": "Recibe del Canal de Estado los datos de lugar, nombre, estado del riego, temperatura y humedad",
+        "x": 180,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e973fcba5363899f",
+        "type": "comment",
+        "z": "1b2fa494e3e4aab7",
+        "name": "TEXT DE LOS DATOS",
+        "info": "Texts para mostrar los datos en el dashboard",
+        "x": 460,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "82178b45791c1d37",
+        "type": "debug",
+        "z": "1b2fa494e3e4aab7",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ba93eb9a71cd615b",
+        "type": "debug",
+        "z": "1b2fa494e3e4aab7",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 360,
+        "wires": []
+    }
+]
