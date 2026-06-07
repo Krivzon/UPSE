@@ -1,16 +1,16 @@
 [
     {
-        "id": "8ed640c0533ce706",
+        "id": "f6d8ab73aad19cbe",
         "type": "tab",
-        "label": "Cliente Sensor",
+        "label": "CLIENTE SENSOR",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "1b2fa494e3e4aab7",
+        "id": "746814c61dc02221",
         "type": "tab",
-        "label": "Cliente Dashboard",
+        "label": "CLIENTE DASHBOARD",
         "disabled": false,
         "info": "",
         "env": []
@@ -152,87 +152,6 @@
         }
     },
     {
-        "id": "4409b551e9d5f642",
-        "type": "mqtt-broker",
-        "name": "HIVEMQ",
-        "broker": "broker.hivemq.com",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "HOLA",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "0251b725d81a7798",
-        "type": "ui-page",
-        "name": "Laboratorio 3",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab3",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 7,
-        "className": "",
-        "visible": false,
-        "disabled": "false"
-    },
-    {
-        "id": "3998d51924df9e7a",
-        "type": "ui-group",
-        "name": "AVISO",
-        "page": "0251b725d81a7798",
-        "width": "5",
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
         "id": "0420ac146bee7dda",
         "type": "mqtt-broker",
         "name": "MOSQUITTO",
@@ -262,701 +181,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "6b68dcdfc8e52331",
-        "type": "ui-group",
-        "name": "Estado",
-        "page": "0251b725d81a7798",
-        "width": "6",
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "69ae101610968e7b",
-        "type": "ui-page",
-        "name": "Laboratorio 4",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab4",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 8,
-        "className": "",
-        "visible": false,
-        "disabled": false
-    },
-    {
-        "id": "087bccc7da50e67c",
-        "type": "ui-group",
-        "name": "GAUST",
-        "page": "69ae101610968e7b",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "d4053ceca840bc66",
-        "type": "ui-group",
-        "name": "AVISO",
-        "page": "69ae101610968e7b",
-        "width": 6,
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "b03c7d3b2fb61fea",
-        "type": "ui-page",
-        "name": "Laboratorio 5",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab5",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 9,
-        "className": "",
-        "visible": false,
-        "disabled": "false"
-    },
-    {
-        "id": "f03485b4d00a4655",
-        "type": "ui-group",
-        "name": "WeatherStack",
-        "page": "b03c7d3b2fb61fea",
-        "width": "6",
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "781ea034eb215d45",
-        "type": "ui-group",
-        "name": "OpenWeather",
-        "page": "b03c7d3b2fb61fea",
-        "width": 6,
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "d2f08548fd18816d",
-        "type": "ui-page",
-        "name": "Proyecto - MARKDOWN 1",
-        "ui": "4a179a7ec3d10560",
-        "path": "/home",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 10,
-        "className": "",
-        "visible": false,
-        "disabled": false
-    },
-    {
-        "id": "c70c9924d7f654f5",
-        "type": "ui-group",
-        "name": "UTMACH",
-        "page": "d2f08548fd18816d",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "32baa51b1b813c32",
-        "type": "ui-page",
-        "name": "Group1",
-        "ui": "4a179a7ec3d10560",
-        "path": "/group1",
-        "icon": "thermometer-lines",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 11,
-        "className": "",
-        "visible": false,
-        "disabled": false
-    },
-    {
-        "id": "0d5d76c1d9218e84",
-        "type": "ui-page",
-        "name": "Group 2",
-        "ui": "4a179a7ec3d10560",
-        "path": "/group2",
-        "icon": "router-network-wireless",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 12,
-        "className": "",
-        "visible": false,
-        "disabled": false
-    },
-    {
-        "id": "1928189163de15fe",
-        "type": "ui-group",
-        "name": "Group 1",
-        "page": "32baa51b1b813c32",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "cef9f418c0d33318",
-        "type": "ui-group",
-        "name": "Group 2",
-        "page": "0d5d76c1d9218e84",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "635e87301ed0c4ef",
-        "type": "ui-page",
-        "name": "Cliente REST",
-        "ui": "4a179a7ec3d10560",
-        "path": "/page7",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 13,
-        "className": "",
-        "visible": false,
-        "disabled": true
-    },
-    {
-        "id": "da40f663f5f34174",
-        "type": "ui-group",
-        "name": "CLIENTE REST",
-        "page": "635e87301ed0c4ef",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "5f0b5961bf1ef118",
-        "type": "ui-page",
-        "name": "PAGINA DE INICIO",
-        "ui": "4a179a7ec3d10560",
-        "path": "/inicio",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 2,
-        "className": "",
-        "visible": false,
-        "disabled": false
-    },
-    {
-        "id": "968073b8f4d056c6",
-        "type": "ui-group",
-        "name": "INICIO",
-        "page": "5f0b5961bf1ef118",
-        "width": "12",
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "0c3197fb85bf3282",
-        "type": "ui-page",
-        "name": "Laboratorio 1",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab1",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 3,
-        "className": "",
-        "visible": false,
-        "disabled": "false"
-    },
-    {
-        "id": "0a597b69e8573bb6",
-        "type": "ui-group",
-        "name": "Sensor parte1",
-        "page": "0c3197fb85bf3282",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "fbf018c99c5fdace",
-        "type": "ui-group",
-        "name": "Sensor parte2",
-        "page": "0c3197fb85bf3282",
-        "width": 6,
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "19f4e44f9e2acd9b",
-        "type": "ui-group",
-        "name": "Extraer datos de un JSON",
-        "page": "0c3197fb85bf3282",
-        "width": 6,
-        "height": 1,
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "8298fd820e3228fc",
-        "type": "ui-page",
-        "name": "Laboratorio 2.2",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab2.2",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 5,
-        "className": "",
-        "visible": false,
-        "disabled": "false"
-    },
-    {
-        "id": "75452475d49f654c",
-        "type": "ui-group",
-        "name": "Estado",
-        "page": "8298fd820e3228fc",
-        "width": "12",
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "dada15d429cd4fb7",
-        "type": "ui-page",
-        "name": "Laboratorio 2.3",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab2.3",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "bdd75ff31c03ce78",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 6,
-        "className": "",
-        "visible": false,
-        "disabled": false
-    },
-    {
-        "id": "d453c32c351d7be3",
-        "type": "ui-group",
-        "name": "Importacion de Dash1",
-        "page": "dada15d429cd4fb7",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "1a7d25a02537d92f",
-        "type": "ui-group",
-        "name": "CUADROS",
-        "page": "dada15d429cd4fb7",
-        "width": 6,
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "aa04dc0c36341324",
-        "type": "ui-theme",
-        "name": "ui-base.label.theme 2",
-        "colors": {
-            "surface": "#1bbb86",
-            "primary": "#11d07d",
-            "bgPage": "#000000",
-            "groupBg": "#696969",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "density": "default",
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "9ca1a902b39cb86c",
-        "type": "ui-page",
-        "name": "Laboratorio 2",
-        "ui": "4a179a7ec3d10560",
-        "path": "/lab2",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "aa04dc0c36341324",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 4,
-        "className": "",
-        "visible": false,
-        "disabled": "false"
-    },
-    {
-        "id": "190a3eb82c66206a",
-        "type": "ui-group",
-        "name": "Group 4",
-        "page": "9ca1a902b39cb86c",
-        "width": "3",
-        "height": "9",
-        "order": 4,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "8022e6c695b3b05f",
-        "type": "ui-group",
-        "name": "Group 1",
-        "page": "9ca1a902b39cb86c",
-        "width": "3",
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "fef2d93f8d165c9c",
-        "type": "ui-group",
-        "name": "Group 3",
-        "page": "9ca1a902b39cb86c",
-        "width": "3",
-        "height": "2",
-        "order": 3,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "5eae34e60b4a96b4",
-        "type": "ui-group",
-        "name": "Group 2",
-        "page": "9ca1a902b39cb86c",
-        "width": "3",
-        "height": 1,
-        "order": 2,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
     },
     {
         "id": "5164896a4f7bc316",
@@ -1025,7 +249,7 @@
     {
         "id": "77de30eda38d93f2",
         "type": "inject",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Dar valores cada 1 m",
         "props": [
             {
@@ -1039,8 +263,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 140,
-        "y": 200,
+        "x": 240,
+        "y": 400,
         "wires": [
             [
                 "074d98ec4c96286d"
@@ -1050,14 +274,14 @@
     {
         "id": "532af9c4d98011bf",
         "type": "random",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Temperatura",
         "low": 1,
         "high": "100",
         "inte": "false",
         "property": "temp",
-        "x": 370,
-        "y": 280,
+        "x": 470,
+        "y": 480,
         "wires": [
             [
                 "0d7b2e48b008a8af",
@@ -1068,14 +292,14 @@
     {
         "id": "074d98ec4c96286d",
         "type": "random",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Humedad",
         "low": 1,
         "high": "100",
         "inte": "false",
         "property": "hum",
-        "x": 360,
-        "y": 200,
+        "x": 460,
+        "y": 400,
         "wires": [
             [
                 "78b294edf32da459",
@@ -1086,7 +310,7 @@
     {
         "id": "01ad5533d1d4b564",
         "type": "inject",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Dar valores cada 2 m",
         "props": [
             {
@@ -1100,8 +324,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 140,
-        "y": 280,
+        "x": 240,
+        "y": 480,
         "wires": [
             [
                 "532af9c4d98011bf"
@@ -1111,7 +335,7 @@
     {
         "id": "813a5ec7116778fd",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "alarmaHumedad",
         "rules": [
             {
@@ -1127,8 +351,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
-        "y": 60,
+        "x": 890,
+        "y": 260,
         "wires": [
             [
                 "9003ee2309a412b6"
@@ -1138,7 +362,7 @@
     {
         "id": "f91c19ddfa1b26f7",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "alarmaT",
         "rules": [
             {
@@ -1154,8 +378,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 360,
+        "x": 880,
+        "y": 560,
         "wires": [
             [
                 "9003ee2309a412b6"
@@ -1165,7 +389,7 @@
     {
         "id": "78b294edf32da459",
         "type": "switch",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": ">60",
         "property": "hum",
         "propertyType": "msg",
@@ -1184,8 +408,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 610,
-        "y": 80,
+        "x": 710,
+        "y": 280,
         "wires": [
             [
                 "813a5ec7116778fd"
@@ -1198,7 +422,7 @@
     {
         "id": "95e29d808370cf9a",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "alarmaHumedad",
         "rules": [
             {
@@ -1214,8 +438,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
-        "y": 100,
+        "x": 890,
+        "y": 300,
         "wires": [
             [
                 "9003ee2309a412b6"
@@ -1225,7 +449,7 @@
     {
         "id": "9003ee2309a412b6",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "ESTADO",
         "rules": [
             {
@@ -1241,8 +465,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1220,
-        "y": 240,
+        "x": 1320,
+        "y": 440,
         "wires": [
             [
                 "cbcadbb13685c507",
@@ -1253,7 +477,7 @@
     {
         "id": "0d7b2e48b008a8af",
         "type": "switch",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": ">60",
         "property": "temp",
         "propertyType": "msg",
@@ -1272,8 +496,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 610,
-        "y": 420,
+        "x": 710,
+        "y": 620,
         "wires": [
             [
                 "f91c19ddfa1b26f7"
@@ -1286,7 +510,7 @@
     {
         "id": "3a49dc843b26f612",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "alarmaT",
         "rules": [
             {
@@ -1302,8 +526,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 420,
+        "x": 880,
+        "y": 620,
         "wires": [
             [
                 "9003ee2309a412b6"
@@ -1313,7 +537,7 @@
     {
         "id": "fe8d7eb70f93c1b8",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Hum red",
         "rules": [
             {
@@ -1329,8 +553,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 200,
+        "x": 720,
+        "y": 400,
         "wires": [
             [
                 "119ad2db8f7d127b",
@@ -1341,7 +565,7 @@
     {
         "id": "1786aa593b93305f",
         "type": "change",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "TEMP red",
         "rules": [
             {
@@ -1357,8 +581,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 280,
+        "x": 720,
+        "y": 480,
         "wires": [
             [
                 "119ad2db8f7d127b",
@@ -1369,7 +593,7 @@
     {
         "id": "119ad2db8f7d127b",
         "type": "mqtt out",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "",
         "topic": "KRISTHIAN/Sensores",
         "qos": "",
@@ -1380,14 +604,14 @@
         "correl": "",
         "expiry": "",
         "broker": "0420ac146bee7dda",
-        "x": 900,
-        "y": 220,
+        "x": 1000,
+        "y": 420,
         "wires": []
     },
     {
         "id": "cbcadbb13685c507",
         "type": "mqtt out",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "",
         "topic": "KRISTHIAN/Estado",
         "qos": "",
@@ -1398,124 +622,124 @@
         "correl": "",
         "expiry": "",
         "broker": "0420ac146bee7dda",
-        "x": 1430,
-        "y": 240,
+        "x": 1530,
+        "y": 440,
         "wires": []
     },
     {
         "id": "50571f67d16e4db9",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Lanza mensaje cada 1 minuto",
         "info": "Injecta cada 1 minuto para la humedad",
-        "x": 140,
-        "y": 160,
+        "x": 240,
+        "y": 360,
         "wires": []
     },
     {
         "id": "de51555e7227ee9a",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Lanza mensaje cada 2 minuto",
         "info": "Injecta cada 2 minuto para la temperatura",
-        "x": 140,
-        "y": 240,
+        "x": 240,
+        "y": 440,
         "wires": []
     },
     {
         "id": "73fa69c2bd302719",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Simula Sensor Humedad",
         "info": "Genera Humedad random",
-        "x": 390,
-        "y": 160,
+        "x": 490,
+        "y": 360,
         "wires": []
     },
     {
         "id": "ef5ccfc91b2f8d3a",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Redondea Humedad",
         "info": "Redondea en 2 dijitos los decimales de humedad",
-        "x": 630,
-        "y": 160,
+        "x": 730,
+        "y": 360,
         "wires": []
     },
     {
         "id": "dc84cbec7eeb60a3",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Simula Sensor Temperatura",
         "info": "Genera Temperatura random",
-        "x": 400,
-        "y": 240,
+        "x": 500,
+        "y": 440,
         "wires": []
     },
     {
         "id": "d17784592398af52",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Redondea Temperatura",
         "info": "Redondea en 2 dijitos los decimales de temperatura",
-        "x": 640,
-        "y": 240,
+        "x": 740,
+        "y": 440,
         "wires": []
     },
     {
         "id": "edd2e27ae97b263e",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Envia al Canal de Sensores",
         "info": "Envia al Canal de Sensores los datos de humedad y temperatura",
-        "x": 920,
-        "y": 180,
+        "x": 1020,
+        "y": 380,
         "wires": []
     },
     {
         "id": "0afc4605da949935",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Envia al Canal de Estado",
         "info": "Envia al Canal de Estado los datos de lugar, nombre, estado del riego, temperatura y humedad",
-        "x": 1450,
-        "y": 200,
+        "x": 1550,
+        "y": 400,
         "wires": []
     },
     {
         "id": "b56ce2d01cf0a84f",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "JSON ESTADO",
         "info": "El Json que lleva los datos de lugar, nombre, estado del riego, temperatura y humedad",
-        "x": 1220,
-        "y": 200,
+        "x": 1320,
+        "y": 400,
         "wires": []
     },
     {
         "id": "e3d55a23f7b2b461",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Activar alarma Humedad",
         "info": "Activa la alarma de Humedad si es >60",
-        "x": 830,
-        "y": 20,
+        "x": 930,
+        "y": 220,
         "wires": []
     },
     {
         "id": "e06501e244badc35",
         "type": "comment",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "Activar alarma Temperatura",
         "info": "Activa la alarma de Temperatura si es >60",
-        "x": 820,
-        "y": 320,
+        "x": 920,
+        "y": 520,
         "wires": []
     },
     {
         "id": "1cddd9691960da78",
         "type": "debug",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "debug 3",
         "active": true,
         "tosidebar": true,
@@ -1524,14 +748,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 140,
+        "x": 940,
+        "y": 340,
         "wires": []
     },
     {
         "id": "57c61a2999bef0ec",
         "type": "debug",
-        "z": "8ed640c0533ce706",
+        "z": "f6d8ab73aad19cbe",
         "name": "debug 4",
         "active": true,
         "tosidebar": true,
@@ -1540,14 +764,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1380,
-        "y": 340,
+        "x": 1480,
+        "y": 540,
         "wires": []
     },
     {
-        "id": "d0bd450bb07edf28",
+        "id": "9d22dfed61fb4d55",
         "type": "mqtt in",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "",
         "topic": "KRISTHIAN/Sensores",
         "qos": "2",
@@ -1557,20 +781,20 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 200,
-        "y": 80,
+        "x": 300,
+        "y": 220,
         "wires": [
             [
-                "9fa9e0ea60737d19",
-                "353f293017ad7483",
-                "82178b45791c1d37"
+                "57f3c9601c3e0ef2",
+                "f77ea2844126210e",
+                "359373c3d4ad67bf"
             ]
         ]
     },
     {
-        "id": "9fa9e0ea60737d19",
+        "id": "57f3c9601c3e0ef2",
         "type": "ui-gauge",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "HUMEDAD",
         "group": "514a849a7b067892",
         "order": 2,
@@ -1615,16 +839,16 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 450,
-        "y": 60,
+        "x": 550,
+        "y": 200,
         "wires": [
             []
         ]
     },
     {
-        "id": "353f293017ad7483",
+        "id": "f77ea2844126210e",
         "type": "ui-gauge",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "TEMPERATURA",
         "group": "514a849a7b067892",
         "order": 1,
@@ -1669,16 +893,16 @@
         "styleRounded": true,
         "styleGlow": false,
         "className": "",
-        "x": 450,
-        "y": 140,
+        "x": 550,
+        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "30ccb7877c5c1ab8",
+        "id": "27c1d2d00d7ded96",
         "type": "mqtt in",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "",
         "topic": "KRISTHIAN/Estado",
         "qos": "2",
@@ -1688,23 +912,23 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 190,
-        "y": 340,
+        "x": 290,
+        "y": 480,
         "wires": [
             [
-                "3e4e7f2312cb6656",
-                "8f1a03ee31bf68ce",
-                "80cbf55f85c1ed50",
-                "3ce92bec4d775772",
-                "5c4d144b791cc81a",
-                "ba93eb9a71cd615b"
+                "cc920c7b4db6ca7f",
+                "b3819373ce563cf0",
+                "92f6df9509c3086b",
+                "c7e79b2dc1e7ce9e",
+                "47381f3a33204bc8",
+                "9171ebee17064763"
             ]
         ]
     },
     {
-        "id": "3e4e7f2312cb6656",
+        "id": "cc920c7b4db6ca7f",
         "type": "ui-text",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "group": "f68f10eb30c9d1bc",
         "order": 1,
         "width": 0,
@@ -1721,14 +945,14 @@
         "className": "",
         "value": "payload.sistema.nombre",
         "valueType": "msg",
-        "x": 460,
-        "y": 260,
+        "x": 560,
+        "y": 400,
         "wires": []
     },
     {
-        "id": "8f1a03ee31bf68ce",
+        "id": "b3819373ce563cf0",
         "type": "ui-text",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "group": "f68f10eb30c9d1bc",
         "order": 2,
         "width": 0,
@@ -1745,14 +969,14 @@
         "className": "",
         "value": "payload.sistema.ubicacion",
         "valueType": "msg",
-        "x": 460,
-        "y": 300,
+        "x": 560,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "3ce92bec4d775772",
+        "id": "c7e79b2dc1e7ce9e",
         "type": "ui-text",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "group": "f68f10eb30c9d1bc",
         "order": 5,
         "width": 0,
@@ -1769,14 +993,14 @@
         "className": "",
         "value": "payload.sistema.estado.alarmaHumedad",
         "valueType": "msg",
-        "x": 490,
-        "y": 380,
+        "x": 590,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "5c4d144b791cc81a",
+        "id": "47381f3a33204bc8",
         "type": "ui-text",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "group": "f68f10eb30c9d1bc",
         "order": 4,
         "width": 0,
@@ -1793,14 +1017,14 @@
         "className": "",
         "value": "payload.sistema.estado.alarmaTemperatura",
         "valueType": "msg",
-        "x": 490,
-        "y": 420,
+        "x": 590,
+        "y": 560,
         "wires": []
     },
     {
-        "id": "80cbf55f85c1ed50",
+        "id": "92f6df9509c3086b",
         "type": "ui-text",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "group": "f68f10eb30c9d1bc",
         "order": 3,
         "width": 0,
@@ -1817,64 +1041,64 @@
         "className": "",
         "value": "payload.sistema.estado.riego",
         "valueType": "msg",
-        "x": 450,
-        "y": 340,
+        "x": 550,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "28152b9a05a10429",
+        "id": "0018e5fa6611bc16",
         "type": "comment",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "Gauge de Humedad",
         "info": "Muestra los datos de humedad en un gauge",
-        "x": 470,
-        "y": 20,
+        "x": 570,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "80a11f142f8cd8e7",
+        "id": "6d2ba3dc010ae473",
         "type": "comment",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "Gauge de Temperatura",
         "info": "Muestra los datos de temperatura en un gauge",
-        "x": 460,
-        "y": 100,
+        "x": 560,
+        "y": 240,
         "wires": []
     },
     {
-        "id": "ae979bcf832aad25",
+        "id": "ca4e6b0fe76d8bdb",
         "type": "comment",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "Recibe Canal de Sensores",
         "info": "Recibe del Canal de Sensores los datos de humedad y temperatura",
-        "x": 190,
-        "y": 40,
+        "x": 290,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "aea35c101167741d",
+        "id": "b12e02805a8baaed",
         "type": "comment",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "Recibe del Canal de Estado",
         "info": "Recibe del Canal de Estado los datos de lugar, nombre, estado del riego, temperatura y humedad",
-        "x": 180,
-        "y": 300,
+        "x": 280,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "e973fcba5363899f",
+        "id": "d031b564ae0ffc5d",
         "type": "comment",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "TEXT DE LOS DATOS",
         "info": "Texts para mostrar los datos en el dashboard",
-        "x": 460,
-        "y": 220,
+        "x": 560,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "82178b45791c1d37",
+        "id": "359373c3d4ad67bf",
         "type": "debug",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "debug 1",
         "active": true,
         "tosidebar": true,
@@ -1883,14 +1107,14 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 780,
-        "y": 120,
+        "x": 880,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "ba93eb9a71cd615b",
+        "id": "9171ebee17064763",
         "type": "debug",
-        "z": "1b2fa494e3e4aab7",
+        "z": "746814c61dc02221",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -1899,8 +1123,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 360,
+        "x": 840,
+        "y": 500,
         "wires": []
     }
 ]
